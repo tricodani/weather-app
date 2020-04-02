@@ -116,37 +116,37 @@ const currently = props => {
                         <div className={styles["modal-body"]}>
                           <ul>
                             <li>
-                              <strong>Feels Like</strong>{" "}
+                              <strong>Percepita</strong>{" "}
                               <span>{Math.round(props.currently.apparentTemperature)} °</span>
                             </li>
                             <li>
-                              <strong>Dew Point</strong>{" "}
+                              <strong>Punto di rugiada</strong>{" "}
                               <span>{Math.round(props.currently.dewPoint)} °</span>
                             </li>
                             <li>
-                              <strong>Wind Gust</strong>{" "}
+                              <strong>Velocità vento</strong>{" "}
                               <span>{Math.round(props.currently.windGust)} mph</span>
                             </li>
                             <li>
-                              <strong>Cloud Cover</strong>{" "}
+                              <strong>Nuvolosità</strong>{" "}
                               <span>{formatAsPercentage(props.currently.cloudCover)}</span>
                             </li>
                             <li>
-                              <strong>Air Pressure</strong>{" "}
+                              <strong>Pressione atmosferica</strong>{" "}
                               <span>{calculatePressure(props.currently.pressure)} in</span>
                             </li>
                             <li>
-                              <strong>Ozone</strong>{" "}
+                              <strong>Ozono</strong>{" "}
                               <span>{Math.round(props.currently.ozone)} du</span>
                             </li>
                             <li>
-                              <strong>Visibility</strong>{" "}
+                              <strong>Visibilità</strong>{" "}
                               <span>{Math.round(props.currently.visibility)} mi</span>
                             </li>
                             {props.currently.nearestStormBearing ? (
                               <>
                                 <li>
-                                  <strong>Nearest Storm</strong>{" "}
+                                  <strong>Tempesta più vicina</strong>{" "}
                                   <span>
                                     {getDirection(props.currently.nearestStormBearing)}{" "}
                                     {Math.round(props.currently.nearestStormDistance)} mi
@@ -158,7 +158,7 @@ const currently = props => {
                             )}
                           </ul>
                           <button className="btn btn-secondary" onClick={handleClose}>
-                            Close
+                            Chiudi
                           </button>
                         </div>
                       </>
