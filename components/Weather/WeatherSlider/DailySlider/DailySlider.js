@@ -182,33 +182,33 @@ const dailySlider = props => {
                         <strong>Punto di rugiada</strong> <span>{Math.round(item.dewPoint)} °</span>
                       </li>
                       <li>
-                        <strong>Wind Gust</strong> <span>{Math.round(item.windGust)} mph</span>
+                        <strong>Raffiche di vento</strong> <span>{Math.round(item.windGust)} mph</span>
                       </li>
                       {item.precipAccumulation && (
                         <li>
-                          <strong>Snowfall Accumulation</strong>{" "}
+                          <strong>Accumulo di nevicate</strong>{" "}
                           <span>{item.precipAccumulation}"</span>
                         </li>
                       )}
                       <li>
-                        <strong>Cloud Cover</strong>{" "}
+                        <strong>Nuvolosità</strong>{" "}
                         <span>{formatAsPercentage(item.cloudCover)}</span>
                       </li>
                       <li>
-                        <strong>UV Index</strong>{" "}
+                        <strong>UV</strong>{" "}
                         <span>
                           {item.uvIndex} at {format(fromUnixTime(item.uvIndexTime), "hh:mm a")}
                         </span>
                       </li>
                       <li>
-                        <strong>Air Pressure</strong>{" "}
+                        <strong>Pressione atmosferica</strong>{" "}
                         <span>{calculatePressure(item.pressure)} in</span>
                       </li>
                       <li>
-                        <strong>Ozone</strong> <span>{Math.round(item.ozone)} du</span>
+                        <strong>Ozono</strong> <span>{Math.round(item.ozone)} du</span>
                       </li>
                       <li>
-                        <strong>Visibility</strong> <span>{Math.round(item.visibility)} mi</span>
+                        <strong>Visibilità</strong> <span>{Math.round(item.visibility)} mi</span>
                       </li>
                     </ul>
                   </TabPanel>
@@ -221,10 +221,10 @@ const dailySlider = props => {
                             <table className="table table-hover table-borderless table-sm">
                               <thead>
                                 <tr>
-                                  <th scope="col">Time</th>
+                                  <th scope="col">Ora</th>
                                   <th scope="col">Temp</th>
                                   <th scope="col">Precip</th>
-                                  <th scope="col">Wind</th>
+                                  <th scope="col">Vento</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -258,7 +258,7 @@ const dailySlider = props => {
                   })}
                 </Tabs>
                 <button className="btn btn-secondary" onClick={handleClose}>
-                  Close
+                  Chiudi
                 </button>
               </div>
             </>
