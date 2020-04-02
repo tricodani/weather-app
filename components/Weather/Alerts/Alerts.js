@@ -33,7 +33,7 @@ const alerts = props => {
                   <p>Expires: {format(fromUnixTime(item.expires), "eeee MMMM do, hh:mm:ss a")}</p>
                   <p>{item.description}</p>
                   <button onClick={handleClose} className="btn btn-secondary">
-                    Close
+                    Chiudi
                   </button>
                 </div>
               </>
