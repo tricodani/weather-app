@@ -31,8 +31,8 @@ const weather = props => {
             />
             <Tabs className={styles.tabs} selectedTabClassName={styles.selected}>
               <TabList className="list-group list-group-horizontal">
-                <Tab className="list-group-item">Daily</Tab>
-                <Tab className="list-group-item">Hourly</Tab>
+                <Tab className="list-group-item">Giornaliero</Tab>
+                <Tab className="list-group-item">Orario</Tab>
               </TabList>
               <TabPanel>
                 <DailySlider weather={weather} />
