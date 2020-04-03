@@ -55,7 +55,7 @@ const dailySlider = props => {
               target="_blank"
               className={[styles.slide, styles["slide-modal-btn"]].join(" ")}>
               {format(new Date(), "eeee Do") === format(fromUnixTime(item.time), "eeee Do") ? (
-                <div className={styles.date}>Today</div>
+                <div className={styles.date}>Oggi</div>
               ) : (
                 <div className={styles.date}>{format(fromUnixTime(item.time), "eee, MMM do")}</div>
               )}
