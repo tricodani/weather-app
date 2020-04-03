@@ -116,7 +116,7 @@ const header = props => {
 
   const refreshLocation = () => {
     setSpinner(true);
-    notify("Refreshing Weather Data");
+    notify("Aggiornamento dei dati meteorologici");
     fetchWeather(latitude, longitude).then(results => {
       setWeather(results);
       setSpinner(false);
@@ -159,7 +159,7 @@ const header = props => {
   const useLocation = () => {
     setSpinner(true);
     setDropdownOpen(!dropdownOpen);
-    notify("Hang tight! Checking your location.");
+    notify("Attendi! Verifica in corso della tua posizione.");
     getPosition()
       .then(results => {
         const lat = results.coords.latitude;
