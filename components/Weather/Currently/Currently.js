@@ -46,7 +46,7 @@ const currently = props => {
                     </svg>
                   </div>
                   <div className="media-body">
-                    Humidity
+                    Humidità
                     <h5>{formatAsPercentage(props.currently.humidity)}</h5>
                   </div>
                 </li>
@@ -62,7 +62,7 @@ const currently = props => {
                     </svg>
                   </div>
                   <div className="media-body">
-                    Precipitation
+                    Precipitazioni
                     <h5>{formatAsPercentage(props.currently.precipProbability)}</h5>
                   </div>
                 </li>
@@ -74,7 +74,7 @@ const currently = props => {
                     </svg>
                   </div>
                   <div className="media-body">
-                    Wind Speed
+                    Velocità vento
                     <h5>
                       {getDirection(props.currently.windBearing)}{" "}
                       {Math.round(props.currently.windSpeed)} MPH
@@ -88,7 +88,7 @@ const currently = props => {
                     </svg>
                   </div>
                   <div className="media-body">
-                    UV Index
+                    UV
                     <h5>{props.currently.uvIndex}</h5>
                   </div>
                 </li>
