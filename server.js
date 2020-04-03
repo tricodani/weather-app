@@ -22,7 +22,7 @@ app
     const apiLimiter = rateLimit({
       windowMs: 5 * 60 * 1000,
       max: 30,
-      message: "Too many weather requests from this IP, please try again in 5 minutes."
+      message: "Troppe richieste meteorologiche da questo IP, riprova tra 5 minuti."
     });
     // server.use(limiter);
     server.use("/api/darkSky/", apiLimiter);
