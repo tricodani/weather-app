@@ -121,7 +121,7 @@ const hourlySlider = props => {
                     <strong>Temperatura</strong> <span>{Math.round(item.temperature)} °</span>
                   </li>
                   <li>
-                    <strong>Feels Like</strong>{" "}
+                    <strong>Percepita</strong>{" "}
                     <span>{Math.round(item.apparentTemperature)} °</span>
                   </li>
                   <li>
