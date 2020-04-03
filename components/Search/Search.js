@@ -42,16 +42,16 @@ const search = props => {
           placeholder: `${city}, ${state}`
         });
 
-        let readyStatus = "Loading";
+        let readyStatus = "Caricamento in corso";
 
         if (coords === "") {
-          readyStatus = "Checking Your Position..";
+          readyStatus = "Verifica della tua posizione..";
         }
         if (coords !== "" && weather === "") {
-          readyStatus = "Loading Weather Data...";
+          readyStatus = "Caricamento dei dati meteorologici...";
         }
         if (weather !== "") {
-          readyStatus = "Search location, zip...";
+          readyStatus = "Cerca località, CAP...";
         }
 
         return (
@@ -67,7 +67,7 @@ const search = props => {
             <div className={[["list-group"], styles["list-group"]].join(" ")}>
               {loading && (
                 <div className="list-group-item disabled" aria-disabled="true">
-                  Loading Results...
+                  Caricamento dei risultati...
                 </div>
               )}
               {suggestions.map(suggestion => {
